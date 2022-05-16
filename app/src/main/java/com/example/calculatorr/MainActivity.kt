@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         tvStatus=findViewById(R.id.tvStatus)
 
         btnAddition.setOnClickListener {
+
             val num1=etNumber.text.toString().toDouble()
             val num2=etSecond.text.toString().toDouble()
             plus(num1,num2)
@@ -53,15 +54,15 @@ class MainActivity : AppCompatActivity() {
             tvStatus.text=total.toString()
         }
         fun minus (num1:Double,num2:Double){
-            val total=num1+num2
+            val total=num1-num2
             tvStatus.text=total.toString()
         }
         fun multiply (num1:Double,num2:Double){
-            val total=num1+num2
+            val total=num1*num2
             tvStatus.text=total.toString()
         }
         fun modulus (num1:Double,num2:Double){
-            val total=num1+num2
+            val total=num1%num2
             tvStatus.text=total.toString()
         }
 
